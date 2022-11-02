@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario">
+        <table align="center">
+            <tr>
+                <td>
+                    <h2>
+                        Lista de productos
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Nombre del producto</label>
+                    <input type="text" name="a" id="a" placeholder="Ingresar el nombre">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">P Compra</label>
+                    <input type="number" name="b" id="b" placeholder="0.00">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">P. Venta</label>
+                    <input type="number" name="b" id="c" placeholder="0.00">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Guardar producto" onclick="guardar('a', 'b', 'c')">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br/>
+    
+    <table align="center" border="1" cellspacing="0" width="100%">
+        <thead>
+            <tr style="background-color: yellow">
+                <td>Producto</td>
+                <td>P. Compra</td>
+                <td>P. Venta</td>
+            </tr>
+        </thead>
+        <tbody id="result"></tbody>
+    </table>
+    <script src="./code.js"></script>
+</body>
+</html>
